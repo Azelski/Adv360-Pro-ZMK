@@ -10,7 +10,7 @@ using Super as the local window-manager modifier.
 BASE          default QWERTY, no home-row tap-hold mods
 NAV           hold left thumb, fast H/J/K/L navigation
 SYM           hold right thumb, programming symbols and code macros
-UTIL          hold NAV + SYM together, numbers/F keys/sticky mods/system
+UTIL          hold NAV + SYM together, numbers/F keys/media/sticky mods/system
 LOCAL         hold right edge thumb, sends F13-F24 for Hyprland
 ```
 
@@ -71,8 +71,10 @@ Top row       F1-F12
 Q-W-E-R-T     Bluetooth profiles 0-4
 A-S-D-F       sticky GUI / Alt / Ctrl / Shift
 G             Bluetooth clear
+J-K-L         Volume down / volume up / mute
+M-,-.         Previous track / play-pause / next track
 Z-X-C-V       Pause / PrintScreen / Ctrl+Alt+End / Ctrl+Alt+Pause
-Right hand    keypad 7-9, 4-6, 1-3, 0
+Right hand    keypad remains on U-I-O-P, H, N, /, bottom row
 Bottom left   Bluetooth clear all, RGB toggle, backlight down/up
 Center top    bootloader
 ```
