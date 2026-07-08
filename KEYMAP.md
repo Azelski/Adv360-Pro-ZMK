@@ -10,7 +10,7 @@ using Super as the local window-manager modifier.
 BASE          default QWERTY, no home-row tap-hold mods
 NAV           hold left thumb, fast H/J/K/L navigation
 SYM           hold right thumb, programming symbols and code macros
-UTIL          hold NAV + SYM together, numbers/F keys/media/sticky mods/system
+UTIL          hold NAV + SYM together, or hold physical Mod; system/numpad/media
 LOCAL         hold right edge thumb, sends F13-F24 for Hyprland
 ```
 
@@ -64,10 +64,11 @@ N M , . /     +  :  ;  ?  /
 
 ## UTIL
 
-Hold `NAV + SYM` together:
+Hold `NAV + SYM` together, or hold the physical Kinesis `Mod` key:
 
 ```text
 Top row       F1-F12
+Esc           Clique/ZMK Studio unlock
 Q-W-E-R-T     Bluetooth profiles 0-4
 A-S-D-F       sticky GUI / Alt / Ctrl / Shift
 G             Bluetooth clear
