@@ -10,7 +10,7 @@ using Super as the local window-manager modifier.
 BASE          default QWERTY, no home-row tap-hold mods
 NAV           hold left thumb, fast H/J/K/L navigation
 SYM           hold right thumb, programming symbols and code macros
-UTIL          hold NAV + SYM together, or hold physical Mod; system/numpad/media
+UTIL          hold NAV + SYM together, physical Mod, mod3, or old CapsLock key
 LOCAL         hold right edge thumb, sends F13-F24 for Hyprland
 ```
 
@@ -32,6 +32,10 @@ Right lower edge:
 
 `RAlt` is available on both sides for Polish diacritics through the OS Polish
 Programmer layout.
+
+CapsLock is on physical `mod4`. The old CapsLock output position now holds
+`UTIL`, so numpad entry can be done by holding the left side and typing numbers
+on the right hand.
 
 ## NAV
 
@@ -64,7 +68,8 @@ N M , . /     +  :  ;  ?  /
 
 ## UTIL
 
-Hold `NAV + SYM` together, or hold the physical Kinesis `Mod` key:
+Hold `NAV + SYM` together, the physical Kinesis `Mod` key, physical `mod3`, or
+the old CapsLock output key:
 
 ```text
 Top row       F1-F12
