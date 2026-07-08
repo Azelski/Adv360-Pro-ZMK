@@ -18,8 +18,8 @@
         compatible = "zmk,conditional-layers";
 
         nav_sym_util {
-            if-layers = <NAV SYM>;
-            then-layer = <UTIL>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
