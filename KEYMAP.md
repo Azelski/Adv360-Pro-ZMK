@@ -72,10 +72,12 @@ Esc           Clique/ZMK Studio unlock
 Q-W-E-R-T     Bluetooth profiles 0-4
 A-S-D-F       sticky GUI / Alt / Ctrl / Shift
 G             Bluetooth clear
-J-K-L         Volume down / volume up / mute
-M-,-.         Previous track / play-pause / next track
 Z-X-C-V       Pause / PrintScreen / Ctrl+Alt+End / Ctrl+Alt+Pause
-Right hand    keypad remains on U-I-O-P, H, N, /, bottom row
+Right hand    full numpad numbers:
+              U-I-O     7 8 9
+              H-J-K     4 5 6
+              N-M-,     1 2 3
+              bottom    0 0 .
 Bottom left   Bluetooth clear all, RGB toggle, backlight down/up
 Center top    bootloader
 ```
