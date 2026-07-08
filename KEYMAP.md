@@ -10,8 +10,8 @@ using Super as the local window-manager modifier.
 BASE          default QWERTY, no home-row tap-hold mods
 NAV           hold left thumb, fast H/J/K/L navigation
 SYM           hold right thumb, programming symbols and code macros
-UTIL          hold NAV + SYM together, physical Mod, mod3, or old CapsLock key
-LOCAL         hold right edge thumb, sends F13-F24 for Hyprland
+UTIL          hold NAV + SYM together, physical Mod, or right lower edge
+LOCAL         hold old CapsLock key, sends F13-F24 for Hyprland
 ```
 
 Home-row mods are intentionally not used. Navigation is a direct `&mo NAV`
@@ -27,15 +27,16 @@ Right thumb cluster:
   LGUI, Delete, SYM, RAlt, Enter, Backspace
 
 Right lower edge:
-  LOCAL
+  UTIL
 ```
 
 `RAlt` is available on both sides for Polish diacritics through the OS Polish
 Programmer layout.
 
 CapsLock is on physical `mod4`. The old CapsLock output position now holds
-`UTIL`, so numpad entry can be done by holding the left side and typing numbers
-on the right hand.
+`LOCAL`, and the right lower edge now holds `UTIL`.
+
+Clique/ZMK Studio unlock is a single press on physical `mod3`.
 
 ## NAV
 
@@ -68,8 +69,8 @@ N M , . /     +  :  ;  ?  /
 
 ## UTIL
 
-Hold `NAV + SYM` together, the physical Kinesis `Mod` key, physical `mod3`, or
-the old CapsLock output key:
+Hold `NAV + SYM` together, the physical Kinesis `Mod` key, or the right lower
+edge:
 
 ```text
 Top row       F1-F12
@@ -89,7 +90,8 @@ Center top    bootloader
 
 ## LOCAL
 
-Hold `LOCAL`; the keyboard sends private F keys for Hyprland:
+Hold `LOCAL` on the old CapsLock output key; the keyboard sends private F keys
+for Hyprland:
 
 ```text
 H J K L     F13 F14 F15 F16
