@@ -7,6 +7,12 @@
 * If you would like to continue using GitHub we recommend using Nick Coutsos’s keymap editor: https://nickcoutsos.github.io/keymap-editor/.
 * If you would prefer to leave GitHub and firmware flashing behind you can perform a one-time firmware update to gain access to Clique. Get started here: https://kinesis-ergo.com/360p-clique-upgrade/.
 
+This profile uses [`config/adv360.keymap`](config/adv360.keymap) as its source of
+truth. `config/keymap.json` is a legacy editor file and does not represent the
+custom NAV/SYM/UTIL/LOCAL layers. If Clique or ZMK Studio has saved a runtime
+keymap, use **Restore Stock Settings** once after flashing; otherwise that saved
+keymap can override later firmware changes.
+
 Certain ZMK features (e.g. combos) require knowing the exact key positions in the matrix. They can be found in both image and text format [here](assets/key-positions.md)
 
 ## Building the Firmware with GitHub Actions
@@ -155,4 +161,3 @@ Further support resources can be found on Kinesis.com:
 
 In the event of a hardware issue it may be necessary to open a support ticket directly with Kinesis as opposed to a GitHub issue in this repository.
 * https://kinesis-ergo.com/support/kb360pro/#ticket
-
