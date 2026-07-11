@@ -10,12 +10,14 @@ It deliberately avoids home-row mods and timing-sensitive typing behaviors.
 BASE          standard QWERTY plus dedicated thumb modifiers
 NAV           hold the left center thumb key
 SYM           hold the right center thumb key
-UTIL          hold NAV + SYM, mod2, mod3, or mod8
+UTIL          hold NAV + SYM, mod1 + mod2, mod3, or mod8
 LOCAL         hold mod7; sends F13-F24 to Hyprland
 ```
 
-The direct UTIL keys internally hold NAV and SYM. This is required because ZMK
-conditional layers cannot also be activated directly with `&mo`.
+Mod1 and mod2 activate NAV and SYM individually, so pressing them together
+activates UTIL through the same conditional layer as the thumb NAV + SYM pair.
+The direct UTIL keys internally hold NAV and SYM because a ZMK conditional
+target layer cannot also be activated directly with `&mo`.
 
 ## Base And Mod Keys
 
@@ -26,8 +28,8 @@ The number row follows the standard Advantage/QWERTY order:
 ```
 
 ```text
-mod1    Clique/ZMK Studio unlock
-mod2    UTIL (right side)
+mod1    NAV; combine with mod2 for UTIL
+mod2    SYM; combine with mod1 for UTIL
 mod3    UTIL (left side, convenient for the numpad and F7-F12)
 mod4    Caps Lock
 mod5    Caps Word
@@ -88,19 +90,15 @@ firmware pairing macros would duplicate closing characters in those tools.
 
 ## UTIL
 
-Hold either direct UTIL key, or hold NAV + SYM together:
+Hold mod3 or mod8, hold the two thumb layer keys, or hold mod1 + mod2:
 
 ```text
 Top row         F1-F12
-Q W E R T       Bluetooth profiles 0-4
 A S D F         sticky GUI / Alt / Ctrl / Shift
-G               clear the selected Bluetooth profile
 Z               Pause
 X               PrintScreen
 C               Ctrl+Alt+End (RDP or Citrix UseCtrlAltEnd=True)
 V               Ctrl+Alt+Enter (Citrix remote Ctrl+Alt+Delete default)
-B               toggle USB/BLE output
-mod5 / mod6     prefer USB / prefer BLE output
 Esc             Clique/ZMK Studio unlock
 ```
 
@@ -120,8 +118,9 @@ left-well Right play/pause
 Left / Right    volume down / volume up
 ```
 
-Select USB for the lowest-latency Citrix connection. Select BLE explicitly when
-USB is connected only for charging; ZMK otherwise prefers USB automatically.
+There are no Bluetooth profile, output-selection, RGB, or backlight controls.
+BLE remains enabled internally because the keyboard halves require it for split
+communication; normal host use is over USB.
 
 ## LOCAL
 
@@ -143,6 +142,9 @@ M               F22: application launcher
 ,               F23: lock screen
 .               F24: enter/leave the Hyprland passthrough submap
 ```
+
+The firmware sends standard F13-F24 HID usages. Hyprland binds their Linux
+evdev keycodes 183-194 directly, avoiding XKB aliases such as `XF86Launch5`.
 
 Passthrough temporarily disables the other keyboard shortcuts so Citrix can
 receive Alt, Super, and other system chords. LOCAL+`.` always exits it.
